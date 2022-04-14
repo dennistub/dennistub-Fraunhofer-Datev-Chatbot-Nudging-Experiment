@@ -3314,7 +3314,7 @@
         let married = false;
         let kirchensteuer = 0;
         s.begin(() => {
-          //  cbl.set("say_method", "browser_tts");
+          cbl.set("say_method", "browser_tts");
           console.log(new bigDecimal(1));
           s.set("condition", cbl.random_item(["nudging", "control", "privacy_priming"]));
           $("#survey_form").append(
